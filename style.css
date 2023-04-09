@@ -1,0 +1,252 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Noto Sans JP', sans-serif;
+   list-style: none;
+   text-decoration: none !important;
+}
+
+a {
+   color: unset;
+}
+
+.bold,
+strong {
+   font-weight: 700 !important;
+}
+
+.text-darker {
+   color: #161c2d !important;
+}
+
+/* ------------------------------------------------------- */
+/* navbar css */
+
+header {
+   padding: 20px 80px;
+   background: #e3e6f3;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, .06);
+   z-index: 999;
+   position: sticky;
+   top: 0;
+   left: 0;
+}
+
+.navbar-nav a {
+   position: relative;
+   font-size: 16px;
+   font-weight: 600;
+   color: #1a1a1a;
+   transition: .3s ease;
+}
+
+.navbar-nav a:focus {
+   color: #1a1a1a;
+}
+
+.navbar-nav :is(a:hover, a.active) {
+   color: #088178;
+}
+
+.navbar-nav :is(a:hover, a.active)::after {
+   content: '';
+   width: 20px;
+   height: 2px;
+   position: absolute;
+   bottom: 0;
+   left: 9px;
+   background: #088178;
+}
+
+.navbar-brand {
+   color: #000 !important;
+   font-size: 24px;
+   font-weight: bolder;
+}
+
+.navbar-toggler:focus {
+   box-shadow: 0 0 0 0.15rem;
+}
+
+.btn-auth .btn-outline {
+   color: #1a1a1a;
+   border-color: #1a1a1a;
+}
+
+.btn-auth button:focus {
+   box-shadow: none;
+}
+
+.btn-auth button:hover {
+   background-color: #feb252;
+}
+
+.btn-auth .signup {
+   background-color: #feb252;
+}
+
+.navbar-toggler {
+   border: 1px solid #1a1a1a;
+}
+
+/* navbar css ^*/
+
+
+/* hero css*/
+#hero {
+   background-image: url(images/hero.jpg);
+   height: 90vh;
+   width: 100%;
+   background-size: contain;
+   background-position: top 25% right 10%;
+   background-repeat: no-repeat;
+   padding: 0 80px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+#hero h1 {
+   font-size: 46px;
+   font-weight: 700;
+   line-height: 54px;
+   color: #222;
+}
+
+#hero h2 {
+   font-size: 46px;
+   line-height: 54px;
+   color: #088178;
+}
+
+#hero h3 {
+   width: 50%;
+   font-size: 20px;
+   font-weight: 300;
+   line-height: 30px;
+   color: #465b52;
+}
+
+/* hero css ^*/
+
+/* contact-us */
+#contact-us {
+   background-color: #f1f4f8;
+   padding: 80px;
+   display: flex;
+}
+
+#contact-us .info {
+   color: #465b52;
+}
+
+#contact-us .info h2 {
+   color: #1a1a1a;
+   font-weight: 700;
+}
+
+#contact-us .info h3 {
+   font-size: 25px;
+   margin: 30px 0;
+}
+
+#contact-us .info i {
+   color: #088178;
+   margin-right: 5px;
+}
+
+.form-contact label {
+   font-size: 16px;
+   font-weight: 600;
+   color: rgb(26, 26, 26);
+}
+
+.form-contact :is(input, textarea) {
+   border: 1px solid #465b52;
+}
+
+.form-contact :is(input:focus, textarea:focus) {
+   box-shadow: none;
+}
+
+#contact-us #contactus_btn {
+   width: min(400px, 100%);
+   font-size: 14px;
+   font-weight: 600;
+   padding: 15px 30px;
+   color: #222;
+   background-color: #feb252;
+   border-radius: 4px;
+   cursor: pointer;
+   border: none;
+   outline: none;
+   transition: .2s;
+}
+
+#contact-us #contactus_btn:focus {
+   box-shadow: none;
+}
+
+/* contact-us ^ */
+
+/* login modal  */
+#loginModal .modal-header{
+   border: none;
+}
+#loginModal .btn-close{
+   box-shadow: none;
+}
+a#registeration_btn {
+   color: #088178;
+}
+.login-model-custom input:focus {
+   box-shadow: none;
+}
+#login_form .input-group span {
+   line-height: 25px !important;
+}
+
+.form-check-input:checked {
+   background-color: #088178;
+   border-color: #088178;
+}
+.btn-login{
+   background-color: #feb252;
+   border:1px solid #1a1a1a;
+   color: #161c2d;
+}
+
+/* login modal ^ */
+
+
+
+
+
+
+/* responsive css  */
+@media (max-width: 991.98px) {
+   .navbar-nav :is(a:hover, a.active)::after {
+      left: 0;
+   }
+
+   .btn-auth button {
+      margin: 5px 0;
+   }
+
+   #hero h3 {
+      width: auto;
+   }
+}
+
+@media (max-width: 767.98px) {
+   #hero {
+      align-items: center;
+   }
+
+   #hero h3 {
+      color: #222;
+   }
+
+}
